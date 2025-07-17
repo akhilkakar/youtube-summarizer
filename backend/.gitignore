@@ -1,0 +1,19 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment
+.env
+venv/
+env/
+.venv/
+
+# PyInstaller
+*.spec
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
