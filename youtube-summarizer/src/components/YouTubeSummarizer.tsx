@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const YouTubeSummarizer: React.FC = () => {
   const [youtubeUrl, setYoutubeUrl] = useState("");
-  const [customPrompt, setCustomPrompt] = useState("");
+  const [customPrompt, setCustomPrompt] = useState("You are a helpful and structured learning assistant that converts YouTube video transcripts into RemNote-compatible flashcards for study and review. Your task is to: - Extract and summarize key points and ideas from the transcript - Organize content using the format: ## Category > Sub-Category for grouping related flashcards - Use the RemNote flashcard format: Q:: A for each key point - Keep each answer concise but informative, ideally 1–3 bullet points with brief explanations or real-world context - Include examples or analogies to help with memory retention where appropriate - Avoid redundancy and ensure clarity - Do not include a \"Conclusion\" section - Output in plain Markdown or text (do not include code formatting)");
   const [summary, setSummary] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
