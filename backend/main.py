@@ -64,7 +64,7 @@ Your task is to:
 def get_summary(transcript: str, system_prompt: str) -> str:
     try:
         response = openai_client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-5",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": f"Summarize the following YouTube video transcript:\n\n{transcript}"}
